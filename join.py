@@ -44,16 +44,16 @@ class Join:
 		self.b = numBuffers
 
 	def SNLJ(self):
-		print("Relation 1 as outer: {}", self.p1 + self.r1 * self.p2)
-		print("Relation 2 as outer: {}", self.p2 + self.r2 * self.p1)
+		print("Relation 1 as outer: {}".format(self.p1 + self.r1 * self.p2))
+		print("Relation 2 as outer: {}".format(self.p2 + self.r2 * self.p1))
 
 	def PNLJ(self):
-		print("Relation 1 as outer: {}", self.p1 + self.p1 * self.p2)
-		print("Relation 2 as outer: {}", self.p2 + self.p2 * self.p1)
+		print("Relation 1 as outer: {}".format(self.p1 + self.p1 * self.p2))
+		print("Relation 2 as outer: {}".format(self.p2 + self.p2 * self.p1))
 
 	def BNLJ(self):
-		print("Relation 1 as outer: {}", self.p1 + ceil(self.p1 / (self.b - 2)) * self.p2)
-		print("Relation 2 as outer: {}", self.p2 + ceil(self.p2 / (self.b - 2)) * self.p1)
+		print("Relation 1 as outer: {}".format(self.p1 + ceil(self.p1 / (self.b - 2)) * self.p2))
+		print("Relation 2 as outer: {}".format(self.p2 + ceil(self.p2 / (self.b - 2)) * self.p1))
 
 	def hash(self):
 		b, p1, p2 = self.b, self.p1, self.p2
